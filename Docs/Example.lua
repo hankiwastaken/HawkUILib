@@ -156,13 +156,13 @@ mainTab:Image({
 	MiniTitle = "Shawde",
 	FileName = "ap.png",
 	CheckFile = false,
-	ImageLink = "https://risehub.fun/assets/Rise.png",
+	ImageLink = "https://risehub.fun/assets/Rise.png", --url or rbxassetids
 	ImageColor = Color3.fromRGB(255, 255, 255),
 	Description = {"Naber","Hahza","oamahgd"},
 	StrokeColor = Color3.fromRGB(85, 255, 0),
 	Volume = 1,
-	WriteInto = "Rise",
-	Type = "Image"
+	WriteInto = "Rise", --Main Folder Name
+	Type = "Image" --Image or Video
 })
 
 -- 18. Tab:Video(options)
@@ -268,3 +268,4 @@ Notifications:Notify({
 
 
 print("HawkLib full example script loaded.")
+
