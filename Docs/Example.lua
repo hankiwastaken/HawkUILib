@@ -1,5 +1,6 @@
-local HawkLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Cxh4n/PenciZornoHUB/refs/heads/main/Assets/UILib.lua"))()
+local HawkLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hankiwastaken/HawkUILib/refs/heads/main/Source/HawkLib.lua"))()
 -- The library requires this key to be set.
+--trolloko
 _HawkKey = "pencizurnabayilirim"
 
 local Hawk = HawkLib -- Assuming HawkLib is loaded and assigned to Hawk
@@ -264,5 +265,6 @@ Notifications:Notify({
 		print("Notification button clicked!")
 	end
 })
+
 
 print("HawkLib full example script loaded.")
