@@ -42,6 +42,3 @@ This project is licensed under the **Apache License** — see the [LICENSE](LICE
 - GitHub: [@hankiwastaken](https://github.com/hankiwastaken)
 - Discord: [@hankiwastaken](https://discord.com/users/1355555077330440435)
 
----
-
-<p align="center">Made with ❤️ by <a href="https://github.com/your-username">Your Name</a></p>
