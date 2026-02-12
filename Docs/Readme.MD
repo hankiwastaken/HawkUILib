@@ -32,7 +32,7 @@ https://hawklib.gitbook.io/docs/
 
 ## 📄 License
 
-This project is licensed under the **Apache License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License** — see the [LICENSE](https://github.com/hankiwastaken/HawkUILib/blob/main/LICENSE) file for details.
 
 ---
 
