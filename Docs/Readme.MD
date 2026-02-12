@@ -1,4 +1,4 @@
-# Hawk UI L Library By Hanki
+# Hawk UI Library By Hanki
 
 > An ui lib inspired from Rayfield, Fluent and Wind
 
