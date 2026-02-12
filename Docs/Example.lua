@@ -1,3 +1,7 @@
+-- there may be functions that i didnt write here, im lazy xd
+
+
+
 local HawkLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hankiwastaken/HawkUILib/refs/heads/main/Source/HawkLib.lua"))()
 -- The library requires this key to be set.
 --trolloko
@@ -268,4 +272,5 @@ Notifications:Notify({
 
 
 print("HawkLib full example script loaded.")
+
 
