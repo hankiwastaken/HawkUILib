@@ -33,16 +33,16 @@ if not game:IsLoaded() then
 end
 
 --Folder Creation
-if not isfolder("Rise") then
-	makefolder("Rise")
+if not isfolder("Hawk") then
+	makefolder("Hawk")
 end
 
-if not isfolder("Rise/Settings") then
-	makefolder("Rise/Settings")
+if not isfolder("Hawk/Settings") then
+	makefolder("Hawk/Settings")
 end
 
-if not isfolder("Rise/Assets") then
-	makefolder("Rise/Assets")
+if not isfolder("Hawk/Assets") then
+	makefolder("Hawk/Assets")
 end
 
 local UserInputService = game:GetService("UserInputService")
@@ -1813,7 +1813,7 @@ function HawkLib:Window(Win)
 			end
 
 			function HawkLib:SaveConfig()
-				local savedfilename = "Rise/Settings/" .. HawkConfigName .. "Settings.json"
+				local savedfilename = "Hawk/Settings/" .. HawkConfigName .. "Settings.json"
 				local save = HttpService:JSONEncode(HawkConfigSettings)
 				writefile(savedfilename, save)
 			end
@@ -1821,12 +1821,12 @@ function HawkLib:Window(Win)
 			-- LoadConfig fonksiyonundan hemen sonra (satır ~3030)
 			function HawkLib:LoadConfig(ConfigName)
 				LoadHawkConfig = "enabled"
-				if not isfile("Rise/Settings/" .. ConfigName .. "Settings.json") then
+				if not isfile("Hawk/Settings/" .. ConfigName .. "Settings.json") then
 					warn("Config file not found!")
 					return false
 				end
 
-				local savedfile = readfile("Rise/Settings/" .. ConfigName .. "Settings.json")
+				local savedfile = readfile("Hawk/Settings/" .. ConfigName .. "Settings.json")
 				datas = HttpService:JSONDecode(savedfile)
 
 				-- Toggle
