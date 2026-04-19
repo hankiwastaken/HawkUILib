@@ -8,7 +8,7 @@
            \/      \/            \/         \/       \/ 
 
     Hawk Lib - A Roblox UI Library by hankiwastaken on discord
-    Version: 12/02/2026
+    Version: 20/02/2026
     
     This ui lib is inspired from Fluent, Rayfield and Wind UI Libraries.
     This library is designed to be user-friendly and easy to use, with a focus on customization and performance.
@@ -16,7 +16,6 @@
     This ui library is still in development, and may contain bugs or issues.
     It has mobile compliability, even sliders and color pickers work!
     It has more than 15+ themes, and you can also create your own themes by modifying this ui lib.
-
 
     It will get updates, and new features will be added in the future. If you have any suggestions or feedback, please feel free to contact me on discord.
     Discord: hankiwastaken
@@ -1094,7 +1093,7 @@ HawkLib = {
 			SlidingToggleToggledSeconder = Color3.fromRGB(255, 80, 150),
 		},
 	},
-    --config Settings Start Here
+	--config Settings Start Here
 	Elements = {
 		["Toggle"] = {};
 		["TextBox"] = {};
@@ -2591,7 +2590,7 @@ function HawkLib:Window(Win)
 						0.09
 					)
 				end
-			
+
 
 				SliderButton.MouseButton1Down:Connect(
 					function()
@@ -5644,10 +5643,7 @@ function HawkLib:Window(Win)
 				if not isfolder(writeinto) then
 					makefolder(writeinto)
 				end
-				
-				if not isfolder(writeinto.."/Assets") then
-					makefolder(writeinto.."/Assets")
-				end
+
 
 				local ImageToggled = false
 
@@ -5726,7 +5722,7 @@ function HawkLib:Window(Win)
 				UICorner_2.Parent = ImageFrame
 
 				local imgloop = false
-	
+
 				if imagetype == "Image" then
 					if string.find(imagelink, "rbxassetid") then
 						local ImageLabel = Instance.new("ImageLabel")
@@ -5751,14 +5747,14 @@ function HawkLib:Window(Win)
 						if checkfile ~= nil then
 							if checkfile == false then
 								writefile(
-									tostring(writeinto) .. "/Assets/" .. tostring(filename),
+									tostring(writeinto) .. "/" .. tostring(filename),
 									game:HttpGet(tostring(imagelink), true)
 								)
 							else
 								if checkfile == true then
-									if not isfile(tostring(writeinto) .. "/Assets/" .. tostring(filename)) then
+									if not isfile(tostring(writeinto) .. "/" .. tostring(filename)) then
 										writefile(
-											tostring(writeinto) .. "/Assets/" .. tostring(filename),
+											tostring(writeinto) .. "/" .. tostring(filename),
 											game:HttpGet(tostring(imagelink), true)
 										)
 									end
@@ -5767,11 +5763,11 @@ function HawkLib:Window(Win)
 						else
 							checkfile = false
 							writefile(
-								tostring(writeinto) .. "/Assets/" .. tostring(filename),
+								tostring(writeinto) .. "/" .. tostring(filename),
 								game:HttpGet(tostring(imagelink), true)
 							)
 						end
-						
+
 						local ImageLabel = Instance.new("ImageLabel")
 						ImageLabel.Parent = ImageFrame
 						ImageLabel.BackgroundColor3 = HawkLib.Themes[Theme].ItemColors
@@ -5782,7 +5778,7 @@ function HawkLib:Window(Win)
 						ImageLabel.Size = UDim2.new(0, 97, 0, 95)
 						ImageLabel.ImageColor3 = imagecolor
 						ImageLabel.ImageTransparency = 1
-						ImageLabel.Image = getasset(writeinto .. "/Assets/" .. filename)
+						ImageLabel.Image = getasset(writeinto .. "/" .. filename)
 
 						UICorner_3.Parent = ImageLabel
 
@@ -5796,14 +5792,14 @@ function HawkLib:Window(Win)
 						if checkfile ~= nil then
 							if checkfile == false then
 								writefile(
-									tostring(writeinto) .. "\\" .. tostring(filename),
+									tostring(writeinto) .. "/" .. tostring(filename),
 									game:HttpGet(tostring(imagelink), true)
 								)
 							else
 								if checkfile == true then
-									if not isfile(tostring(writeinto) .. "\\" .. tostring(filename)) then
+									if not isfile(tostring(writeinto) .. "/" .. tostring(filename)) then
 										writefile(
-											tostring(writeinto) .. "\\" .. tostring(filename),
+											tostring(writeinto) .. "/" .. tostring(filename),
 											game:HttpGet(tostring(imagelink), true)
 										)
 									end
@@ -5812,7 +5808,7 @@ function HawkLib:Window(Win)
 						else
 							checkfile = false
 							writefile(
-								tostring(writeinto) .. "/Assets/" .. tostring(filename),
+								tostring(writeinto) .. "/" .. tostring(filename),
 								game:HttpGet(tostring(imagelink), true)
 							)
 						end
@@ -5826,7 +5822,7 @@ function HawkLib:Window(Win)
 						VideoLabel.BorderSizePixel = 0
 						VideoLabel.Position = UDim2.new(0, 0, 0.0250000004, 0)
 						VideoLabel.Size = UDim2.new(0, 97, 0, 95)
-						VideoLabel.Video = getasset(writeinto .. "\\" .. filename)
+						VideoLabel.Video = getasset(writeinto .. "/" .. filename)
 						VideoLabel.Volume = tonumber(volume)
 						VideoLabel.Looped = true
 						VideoLabel.Playing = ImageToggled
@@ -6224,9 +6220,9 @@ function HawkLib:Window(Win)
 				VideoStroke.Transparency = 1
 
 				if getgenv().getcustomasset then
-					writefile(tostring(writeinto) .. "\\" .. tostring(filename), game:HttpGet(tostring(linq), true))
+					writefile(tostring(writeinto) .. "/" .. tostring(filename), game:HttpGet(tostring(linq), true))
 					wait()
-					RealVideo.Video = getcustomasset(writeinto .. "\\" .. filename)
+					RealVideo.Video = getcustomasset(writeinto .. "/" .. filename)
 				end
 
 				UICorner_31.Parent = VF
@@ -6452,7 +6448,7 @@ function HawkLib:AddNotifications()
 				v:Destroy()
 			end
 		end
-		
+
 		local NotificationListing = Instance.new("Frame")
 		local UIListLayout = Instance.new("UIListLayout")
 		local UICorner = Instance.new("UICorner")
