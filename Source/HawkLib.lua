@@ -8,7 +8,7 @@
            \/      \/            \/         \/       \/ 
 
     Hawk Lib - A Roblox UI Library by hankiwastaken on discord
-    Version: 20/02/2026
+    Version: 20/04/2026
     
     This ui lib is inspired from Fluent, Rayfield and Wind UI Libraries.
     This library is designed to be user-friendly and easy to use, with a focus on customization and performance.
@@ -16,6 +16,7 @@
     This ui library is still in development, and may contain bugs or issues.
     It has mobile compliability, even sliders and color pickers work!
     It has more than 15+ themes, and you can also create your own themes by modifying this ui lib.
+
 
     It will get updates, and new features will be added in the future. If you have any suggestions or feedback, please feel free to contact me on discord.
     Discord: hankiwastaken
@@ -1699,6 +1700,7 @@ function HawkLib:Window(Win)
 			Page.ScrollBarThickness = 0
 			Page.TopImage = ""
 			Page.Visible = false
+			Page.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
 			if OnPc then
 				Page.Position = UDim2.new(0, 0, 0.02, 0)
