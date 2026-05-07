@@ -7,7 +7,7 @@
      \___|_  /(____  /\/\_/ |__|_ \ |_______ \__||___  /
            \/      \/            \/         \/       \/ 
 
-    Hawk Lib - A Roblox UI Library by hankiwastaken on discord
+    Hawk Lib - A Roblox UI Library by matemahirbaz on discord
     Version: 07/05/2026
     
     This ui lib is inspired from Fluent, Rayfield and Wind UI Libraries.
@@ -7527,30 +7527,28 @@ function HawkLib:AddNotifications()
 
 			Yes.MouseButton1Click:Connect(
 				function()
+					if gamenotificationended == false then
+						return
+					end
 					if alrpressed == true then return end
 					alrpressed = true
 					Close()
 					wait(0.1)
-					for i, v in pairs(LibParent:GetDescendants()) do
-						if v.Name == "Main" and v:FindFirstChild("NoFrame") then
-							v:Destroy()
-						end
-					end
+					NoFrame.Parent.Parent:Destroy()
 					pcall(yescallback)
 				end
 			)
 
 			No.MouseButton1Click:Connect(
 				function()
+					if gamenotificationended == false then
+						return
+					end
 					if alrpressed == true then return end
 					alrpressed = true
 					Close()
 					wait(0.1)
-					for i, v in pairs(LibParent:GetDescendants()) do
-						if v.Name == "Main" and v:FindFirstChild("NoFrame") then
-							v:Destroy()
-						end
-					end
+					NoFrame.Parent.Parent:Destroy()
 					pcall(nocallback)
 				end
 			)
