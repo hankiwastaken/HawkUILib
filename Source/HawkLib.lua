@@ -8,7 +8,7 @@
            \/      \/            \/         \/       \/ 
 
     Hawk Lib - A Roblox UI Library by hankiwastaken on discord
-    Version: 20/04/2026
+    Version: 07/05/2026
     
     This ui lib is inspired from Fluent, Rayfield and Wind UI Libraries.
     This library is designed to be user-friendly and easy to use, with a focus on customization and performance.
@@ -1203,7 +1203,6 @@ end
 local notiftheme
 
 function HawkLib:Window(Win)
-	if _HawkKey == "pencizurnabayilirim" then
 		local ScriptName
 		local DestroyIfExists
 		local Theme
@@ -6440,11 +6439,9 @@ function HawkLib:Window(Win)
 		end
 
 		return Sayfalar
-	end
 end
 
 function HawkLib:AddNotifications()
-	if _HawkKey == "pencizurnabayilirim" then
 		for i, v in pairs(LibParent:GetChildren()) do
 			if v.Name == "HawkNotifications" then
 				v:Destroy()
@@ -7525,9 +7522,13 @@ function HawkLib:AddNotifications()
 					{BackgroundTransparency = 1}
 				):Play()
 			end
+			
+			local alrpressed = false
 
 			Yes.MouseButton1Click:Connect(
 				function()
+					if alrpressed == true then return end
+					alrpressed = true
 					Close()
 					wait(0.1)
 					for i, v in pairs(LibParent:GetDescendants()) do
@@ -7541,6 +7542,8 @@ function HawkLib:AddNotifications()
 
 			No.MouseButton1Click:Connect(
 				function()
+					if alrpressed == true then return end
+					alrpressed = true
 					Close()
 					wait(0.1)
 					for i, v in pairs(LibParent:GetDescendants()) do
@@ -7556,7 +7559,6 @@ function HawkLib:AddNotifications()
 		end
 
 		return NotificationItems
-	end
 end
 
 return HawkLib
