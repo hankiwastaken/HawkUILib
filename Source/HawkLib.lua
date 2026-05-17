@@ -189,65 +189,65 @@ HawkLib = {
 			SlidingToggleToggledPrimer = Color3.fromRGB(255, 0, 4),
 			SlidingToggleToggledSeconder = Color3.fromRGB(150, 0, 2),
 		},
-	Hawk = {
-		    -- Genel
-		    Hover = Color3.fromRGB(45, 45, 50),
-		    Main = Color3.fromRGB(25, 25, 25),
-		    Shadow = Color3.fromRGB(0, 120, 200),           -- Rise'de kırmızıydı, Hawk mavisi
-		    TitleBar = Color3.fromRGB(31, 31, 31),
-		    Tabs = Color3.fromRGB(35, 35, 40),
-		    TabBefore = Color3.fromRGB(33, 33, 33),
-		    TabAfter = Color3.fromRGB(41, 41, 41),
-		    OpenFrame = Color3.fromRGB(30, 30, 35),
-		    Open = Color3.fromRGB(35, 35, 40),
-		    TitleTextColor = Color3.fromRGB(255, 255, 255),
-		    TabTextColor = Color3.fromRGB(255, 255, 255),
-		    TitleLineColor = Color3.fromRGB(44, 44, 44),
-		    PageTitleColor = Color3.fromRGB(198, 198, 198),
-		    Selection = Color3.fromRGB(44, 107, 162),        -- Hawk mavisi
-		    CloseMinimize = Color3.fromRGB(74, 74, 74),
-		
-		    -- Itemler
-		    ItemColors = Color3.fromRGB(35, 35, 35),
-		    ItemTitleColors = Color3.fromRGB(231, 231, 231),
-		    ItemTextColors = Color3.fromRGB(171, 171, 170),
-		    ItemTextBoxKeyBindColors = Color3.fromRGB(27, 27, 27),
-		    ItemTextBoxKeyBindStrokeColors = Color3.fromRGB(60, 60, 60),
-		    ItemTextBoxTextColor = Color3.fromRGB(132, 132, 132),
-		    ItemKeyBindTextColor = Color3.fromRGB(44, 107, 162),    -- Hawk mavisi
-		    ToggleTickColor = Color3.fromRGB(44, 107, 162),         -- Hawk mavisi
-		    ButtonClickIconColor = Color3.fromRGB(182, 182, 182),
-		    SliderButtonFrameColor = Color3.fromRGB(20, 40, 60),    -- Koyu mavi
-		    InSliderFrame = Color3.fromRGB(44, 107, 162),           -- Düz renk (Rise yapısı)
-		    NumColor = Color3.fromRGB(255, 255, 255),
-		
-		    -- Slider
-		    FirstSlider = { First = Color3.fromRGB(44, 107, 162), Second = Color3.fromRGB(25, 62, 93) },
-		    SecondSlider = { First = Color3.fromRGB(50, 50, 60), Second = Color3.fromRGB(30, 30, 35) },
-		
-		    -- Dropdown
-		    DropdownColorPickerImageArrowColors = Color3.fromRGB(199, 199, 199),
-		    DropdownItem = Color3.fromRGB(255, 255, 255),
-		    DropdownItemHover = Color3.fromRGB(44, 107, 162),       -- Hawk mavisi
-		    DropdownItemFirst = Color3.fromRGB(40, 40, 45),
-		    DropdownItemSecond = Color3.fromRGB(25, 25, 30),
-		
-		    -- Notify
-		    NotificationNotifyColor = Color3.fromRGB(42, 44, 42),
-		    NotificationNotifyTitleColor = Color3.fromRGB(231, 231, 231),
-		    NotificationNotifyTextColor = Color3.fromRGB(171, 171, 170),
-		    IconColor = Color3.fromRGB(44, 107, 162),               -- Hawk mavisi
-		    IconShadow = Color3.fromRGB(0, 0, 0),
-		    NotifyButtons = Color3.fromRGB(163, 162, 165),
-		
-		    -- Toggle
-		    ToggleFrameColor = Color3.fromRGB(40, 40, 45),
-		    SlidingTogglePrimer = Color3.fromRGB(80, 80, 90),
-		    SlidingToggleSeconder = Color3.fromRGB(30, 30, 35),
-		    ToggledFrameColor = Color3.fromRGB(20, 40, 60),         -- Koyu mavi
-		    SlidingToggleToggledPrimer = Color3.fromRGB(44, 107, 162),
-		    SlidingToggleToggledSeconder = Color3.fromRGB(25, 62, 93),
-		},
+Hawk = {
+    -- Genel
+    Hover = Color3.fromRGB(45, 45, 50),
+    Main = Color3.fromRGB(25, 25, 25),
+    Shadow = Color3.fromRGB(255, 66, 66),
+    TitleBar = Color3.fromRGB(31, 31, 31),
+    Tabs = Color3.fromRGB(35, 35, 40),
+    TabBefore = Color3.fromRGB(33, 33, 33),
+    TabAfter = Color3.fromRGB(41, 41, 41),
+    OpenFrame = Color3.fromRGB(30, 30, 35),
+    Open = Color3.fromRGB(35, 35, 40),
+    TitleTextColor = Color3.fromRGB(255, 255, 255),
+    TabTextColor = Color3.fromRGB(255, 255, 255),
+    TitleLineColor = Color3.fromRGB(44, 44, 44),
+    PageTitleColor = Color3.fromRGB(198, 198, 198),
+    Selection = Color3.fromRGB(255, 66, 66),        -- Kırmızı (tab vurgusu)
+    CloseMinimize = Color3.fromRGB(74, 74, 74),
+
+    -- Itemler
+    ItemColors = Color3.fromRGB(35, 35, 35),
+    ItemTitleColors = Color3.fromRGB(231, 231, 231),
+    ItemTextColors = Color3.fromRGB(171, 171, 170),
+    ItemTextBoxKeyBindColors = Color3.fromRGB(27, 27, 27),
+    ItemTextBoxKeyBindStrokeColors = Color3.fromRGB(60, 60, 60),
+    ItemTextBoxTextColor = Color3.fromRGB(132, 132, 132),
+    ItemKeyBindTextColor = Color3.fromRGB(255, 66, 66),     -- Kırmızı
+    ToggleTickColor = Color3.fromRGB(255, 66, 66),          -- Kırmızı
+    ButtonClickIconColor = Color3.fromRGB(182, 182, 182),
+    SliderButtonFrameColor = Color3.fromRGB(45, 45, 45),    -- Gri
+    InSliderFrame = Color3.fromRGB(80, 80, 80),             -- Gri (düz renk)
+    NumColor = Color3.fromRGB(255, 255, 255),
+
+    -- Slider
+    FirstSlider = { First = Color3.fromRGB(90, 90, 90), Second = Color3.fromRGB(55, 55, 55) },   -- Gri
+    SecondSlider = { First = Color3.fromRGB(50, 50, 50), Second = Color3.fromRGB(30, 30, 30) },  -- Koyu gri
+
+    -- Dropdown
+    DropdownColorPickerImageArrowColors = Color3.fromRGB(199, 199, 199),
+    DropdownItem = Color3.fromRGB(255, 255, 255),
+    DropdownItemHover = Color3.fromRGB(255, 66, 66),        -- Kırmızı
+    DropdownItemFirst = Color3.fromRGB(40, 40, 45),
+    DropdownItemSecond = Color3.fromRGB(25, 25, 30),
+
+    -- Notify
+    NotificationNotifyColor = Color3.fromRGB(42, 44, 42),
+    NotificationNotifyTitleColor = Color3.fromRGB(231, 231, 231),
+    NotificationNotifyTextColor = Color3.fromRGB(171, 171, 170),
+    IconColor = Color3.fromRGB(255, 66, 66),                -- Kırmızı
+    IconShadow = Color3.fromRGB(0, 0, 0),
+    NotifyButtons = Color3.fromRGB(163, 162, 165),
+
+    -- Toggle
+    ToggleFrameColor = Color3.fromRGB(40, 40, 45),
+    SlidingTogglePrimer = Color3.fromRGB(80, 80, 90),
+    SlidingToggleSeconder = Color3.fromRGB(30, 30, 35),
+    ToggledFrameColor = Color3.fromRGB(60, 20, 20),         -- Koyu kırmızı
+    SlidingToggleToggledPrimer = Color3.fromRGB(255, 66, 66),
+    SlidingToggleToggledSeconder = Color3.fromRGB(150, 40, 40),
+},
 		Red = {
 			Hover = Color3.fromRGB(45, 30, 30),
 			Main = Color3.fromRGB(20, 15, 15),
