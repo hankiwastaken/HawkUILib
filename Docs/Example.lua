@@ -156,28 +156,28 @@ mainTab:Section("Media Elements")
 -- 17. Tab:Image(options)
 -- Displays an image or video.
 mainTab:Image({
-	Title = "Shadow",
-	MiniTitle = "Shawde",
-	FileName = "ap.png",
+	Title = "Hawk Logo",
+	MiniTitle = "Hawk HUB's logo",
+	FileName = "hawk.png",
 	CheckFile = false,
-	ImageLink = "https://risehub.fun/assets/Rise.png", --url or rbxassetids
+	ImageLink = "https://cdn.hawkhub.lol/Hawk_Logo.png", --url or rbxassetids
 	ImageColor = Color3.fromRGB(255, 255, 255),
-	Description = {"Naber","Hahza","oamahgd"},
+	Description = {"Hawk","Hawk Logo","G(old) logo"},
 	StrokeColor = Color3.fromRGB(85, 255, 0),
 	Volume = 1,
-	WriteInto = "Rise", --Main Folder Name
+	WriteInto = "Hawk", --Main Folder Name
 	Type = "Image" --Image or Video
 })
 
 -- 18. Tab:Video(options)
 -- Displays a video. (Similar to Image but may have different internal handling)
 mainTab:Video({
-	VideoTitle = "Trxdent ve Hanki",
-	VideoDescription = "Derdine derman spiderman",
-	VideoLink = "https://images-ext-1.discordapp.net/external/c-uWyr5tJDAGz8FY5vmz6bpUQtiXK6HeSrdU59SXPCE/https/i.imgur.com/nVHti29.mp4", -- webm links or rbxassetid ids only
-	VideoVolume = 0,
+	VideoTitle = "Math Intro",
+	VideoDescription = "Math youtube intro 2026",
+	VideoLink = "https://cdn.hawkhub.lol/Math.webm", -- webm links or rbxassetid ids only
+	VideoVolume = 1,
 	WriteInto = "Hawk",
-	FileName = "ahah.mp4"
+	FileName = "math.webm"
 })
 
 ------------------------------------------------------
